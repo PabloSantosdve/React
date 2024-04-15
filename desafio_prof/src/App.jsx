@@ -18,7 +18,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        <a href="https://www.notion.so/Come-ando-em-Dispositivos-M-veis-d1a7350b4be4465f85b9e32dc573356a" target='_blank' >Hello world</a>
+        <a className='link' href="https://www.notion.so/Come-ando-em-Dispositivos-M-veis-d1a7350b4be4465f85b9e32dc573356a" target='_blank' >Hello world</a>
       </p>
     </>
   )
