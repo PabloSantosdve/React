@@ -1,5 +1,5 @@
 import logo from '../imagens/logo.jpg'
-
+import './titulo.module.css'
 
 
 function titulo(){
