@@ -44,6 +44,12 @@ public class CalculoIMC {
 
 
 
+
+
+
+
+
+
 /*Dias da semana*/
 
 package Javacondicionais;
@@ -94,6 +100,14 @@ public class DiaSemana {
 
 }
 
+
+
+
+
+
+
+
+
 /* Media dos alunos */
 package Javacondicionais;
 
@@ -134,3 +148,5 @@ public class MediaAlunos {
 	}
 
 }
+
+
