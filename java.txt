@@ -1,0 +1,136 @@
+/* IMC */
+
+package Javacondicionais;
+
+import java.util.Scanner;
+
+public class CalculoIMC {
+
+	public static void main(String[] args) {
+		Scanner peso = new Scanner(System.in);
+		Scanner altura = new Scanner(System.in);
+		
+		
+		System.out.print("Digite o seu peso: ");
+		float peso1 = peso.nextFloat();
+		peso.nextLine();
+		
+		System.out.print("digite a altura: ");
+		float altura1 = altura.nextFloat();
+		peso.nextLine();
+		
+		float imc = peso1 / (altura1*2);
+
+		
+		if(imc <= 18.5) {
+			System.out.print("abaixo do peso imc de: " + imc);
+		}else if(imc >= 18.6 && imc <= 24.9) {
+			System.out.print("Peso ideial (Parabens) imc de: " + imc);
+		}else if(imc >= 25.0 && imc <= 29.9) {
+			System.out.print("Levemente acima do peso e imc de: " + imc);
+		}else if (imc >= 30.0 && imc <=34.9) {
+			System.out.print("Obesidade grau I e imc de: " + imc);
+		}else if (imc >= 35.0 && imc <= 39.9) {
+			System.out.print("Obesidade de grau II e imc de: " + imc);
+		}else if (imc >= 40) {
+			System.out.print("Obesidade III e imc de: " + imc);
+		}
+		
+	}
+
+}
+
+
+
+
+
+/*Dias da semana*/
+
+package Javacondicionais;
+
+public class DiaSemana {
+
+	public static void main(String[] args) {
+
+		int numero_dia = 8;
+		String nome_dia;
+
+		switch (numero_dia) {
+		case 1:
+			nome_dia = "Domingo";
+			break;
+
+		case 2:
+			nome_dia = "Segunda-Feira";
+			break;
+
+		case 3:
+			nome_dia = "Terça-Feira";
+			break;
+
+		case 4:
+			nome_dia = "Quarta-Feira";
+			break;
+
+		case 5:
+			nome_dia = "Quinta-Feira";
+			break;
+
+		case 6:
+			nome_dia = "Sexta-Feira";
+			break;
+
+		case 7:
+			nome_dia = "Sabado";
+			break;
+
+		default:
+			nome_dia = "Nome invalido";
+		}
+		
+		System.out.println(nome_dia);
+
+	}
+
+}
+
+/* Media dos alunos */
+package Javacondicionais;
+
+import java.util.Scanner;
+
+public class MediaAlunos {
+
+	public static void main(String[] args) {
+		Scanner nota = new Scanner(System.in);
+
+		System.out.print("Nota 1°Bimestre: ");
+		float nota1 = nota.nextFloat();
+		nota.nextLine();
+
+		System.out.print("Nota 2°Bimestre: ");
+		float nota2 = nota.nextFloat();
+		nota.nextLine();
+
+		System.out.print("Nota 3°Bimestre: ");
+		float nota3 = nota.nextFloat();
+		nota.nextLine();
+
+		System.out.print("Nota 4°Bimestre: ");
+		float nota4 = nota.nextFloat();
+		nota.nextLine();
+
+		float media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+		if (media >= 6) {
+			System.out.print("O aluno foi Aprovado! A media do aluno foi: " + media);
+		} else if (media >= 5) {
+			System.out.print("O aluno esta de recuperação! A media do aluno foi: " + media);
+		} else {
+			;
+			System.out.print("O aluno foi reprovado! A media do aluno foi: " + media);
+		}
+
+	}
+
+}
